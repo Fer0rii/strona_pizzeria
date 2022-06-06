@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+a, a:link, a:visited {
+    color: #FFFAFA;
+    text-decoration: none;
+  }
+
+  
+.strona_glowna {
+    width: 100vw;
+    min-height: 900px;
+    display: flex;
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ), url(./Pizza\ 1920\ 1080.jpg);
+    flex-direction: column;
+}
+
+.strona_glowna nav {
+    display: flex;
+    width: 70vw;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.strona_glowna nav p {
+    padding: 40px;
+    transition: 0.6s;
+}
+.strona_glowna nav p:hover {
+    border-bottom: 5px solid chocolate;
+}
+.strona_logo {
+    font-size: 60px;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.strona_start{
+    display: flex;
+    width: 100vw;
+    height: 340px;
+    color: white;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_text {
+    margin-bottom: 40px;
+    width: 430px;
+    text-align: center;
+}
+.strona_start button{
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+.strona_start button:hover {
+    background-color: bisque;
+    margin-top: -20px;
+}
+
+/* Menu */
+.menu {
+    width: 100vw;
+    min-height: 1500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.menu_tytul {
+    height: 100px;
+    width: 200px;
+    margin-top: 200px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu_nav {
+    height: 100px;
+    width: 70vw;
+    display: flex;
+    background-color: ghostwhite;
+    justify-content: flex-start;
+    align-items: center;
+    position:sticky;
+    top: 0;
+}
+
+.menu_nav button{
+    width: 130px;
+    height: 60px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu_rzeczy {
+    width: 70%;
+}
+
+.menu_rzeczy_a {
+    background-color: white;
+}
+.menu_wielkosc {
+    width: 30%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.menu_pizze {
+    width: 70vw;
+    min-height: 700px;
+}
+.menu_pizze_tytul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 70vw;
+    height: 100px;
+}
+
+.menu_pizze_tabela td{
+    background-color: ghostwhite;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* menu napoje */
+.menu_napoje {
+    min-height: 800px;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu_napoje_tytul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+}
+
+.menu_napoje_tabele {
+    display: flex;
+    width: 70%;
+    min-height: 600px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu_napoje_tabela td{
+    background-color: ghostwhite;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Sticky Nav */
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Menu Sosy */
+
+.menu_sosy {
+    min-height: 400px;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu_sosy_tytul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+}
+
+.menu_sosy_tabele {
+    display: flex;
+    width: 70%;
+    min-height: 400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu_sosy_tabela td{
+    background-color: ghostwhite;
+    text-align: center;
+    margin-bottom: 50px;
+}
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+}
+
+.menu_nav {
+    width: 70vw;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content:space-around ;
+}
+
+.menu_nav p{
+    color: black;
+}
+
+.menu_logo {
+    width: 40%;
+    margin-left: 4;
+    height: 70px;
+    font-size: 30px;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+.menu_przyciski {
+    display: flex;
+}
+
+.menu_przyciski p{
+    padding: 25px;
+    transition: 0.6s;
+}
+
+.menu_przyciski p:hover{
+    border-bottom: 5px solid chocolate;
+}
+/* Menu Przyczepne */
+
+/* zamow */
+.zamow {
+    width: 100vw;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    flex-direction: column;
+}
+.zamow_tytul{
+    width: 70vw;
+    margin-top: 80px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 200px;
+}
+
+.zamow_telefon {
+    width: 70vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+.zamow_telefon_tytul p{
+    padding: 20px;
+}
+/* zamow */
+
+/* promocje */
+.promocje {
+    width: 100vw;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.promocje_tytul {
+    width: 80vw;
+    height: 150px;
+    margin-top: 80px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.promocje_pojemnik {
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.promocja {
+    width: 17.50vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    margin: 30px;
+    background-color: ghostwhite;
+    transition: 0.5s;
+}
+
+.promocja_logo {
+    width: 17.50vw;
+    height: 200px;
+    margin-top: -40px;
+    font-size: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.promocja_tytul {
+    width: 17.50vw;
+    padding: 20px;
+    height: 100px;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.promocje_tekst {
+    height: 100px;
+    width: 17.50vw;
+}
+
+.promocja:hover {
+    width: 20vw;
+}
+/* promocje */
+
+/* kariera */
+.kariera {
+    width: 100vw;
+    height: 2500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.kariera_tytul {
+    width: 80vw;
+    height: 150px;
+    margin-top: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.kariera_pojemnik {
+    width: 90vw;
+    height: 2300px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: -40px;
+    flex-direction: column;
+}
+
+.kariera_poziom {
+    margin-top: 20px;
+    width: 80vw;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 100px;
+    background-color: ghostwhite;
+}
+
+.kariera_tekst {
+    width: 40vw;
+    padding: 30px;
+    height: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kariera_tekst_tytul {
+    height: 100px;
+    font-size: 30px;
+}
+
+.kariera_tekst_tekst {
+    height: 100px;
+}
+
+.kariera_zdjecie {
+    width: 40vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+}
+
+.kariera_kontakt {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kariera_kontakt button{
+    width: 350px;
+    height: 200px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 36px;
+    background-color: ghostwhite;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 25%;
+    margin-bottom: 50px;
+}
+
+.kariera_kontakt button:hover{
+    background-color: chocolate;
+    width: 400px;
+    height: 250px;
+    color: white;
+}
+/* kariera */
+
+/* Kontakt */
+.kontakt {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.kontakt_tytul {
+    width: 80vw;
+    height: 150px;
+    margin-top: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.kontakt_formularz {
+    width: 60vw;
+    height: 650px;
+    background-color: ghostwhite;
+}
+
+form { 
+    max-width: 600px; 
+    margin:50px auto; 
+}
+
+.input {
+    color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+.feedback-input:focus { 
+    border:2px solid #CC4949; 
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#CC6666;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+[type="submit"]:hover { 
+    background:#CC4949; 
+}
+/* Kontakt */
+
+/* blad */
+.blad {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.blad_tytul {
+    width: 80vw;
+    margin-top: 200px;
+    height: 150px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blad_powrot {
+    width: 80vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blad_powrot button{
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.7s;
+    background-color: white;
+}
+
+.blad_powrot button:hover {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: -20px;
+}
+/* stopka */
+footer {
+    background-color: rgba(41,26,26,255);
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer_pojemnik {
+    width: 80vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_kolumna {
+    color: #D3D6D8;
+    width: 15vw;
+    margin-left: 50px;
+    height: 200px;
+}
+.footer_kolumna p {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.footer_kolumna ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    color: #D3D6D8;
+    margin-bottom: 25px;
+}
+
+/* Wykonał Adrian Czarkowski IIIaT */
+.podpis {
+    margin-top: 45px;
+}
+
